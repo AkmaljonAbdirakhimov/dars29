@@ -1,4 +1,3 @@
-import 'package:dars29/utils/app_extensions.dart';
 import 'package:dars29/utils/size_utils.dart';
 import 'package:flutter/material.dart';
 
@@ -7,10 +6,9 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final screenWidth = SizeUtils.screenWidth(context);
-    final screenHeight = context.screenHeight;
+    final screenWidth = SizeUtils.screenSize(context).width;
+    final screenHeight = SizeUtils.screenSize(context).height;
 
-    
     final double boxSize =
         screenWidth > 500 ? screenWidth / 6 - 30 : screenWidth / 3 - 10;
 

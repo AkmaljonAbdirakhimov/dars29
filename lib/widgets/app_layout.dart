@@ -20,7 +20,7 @@ class _AppLayoutState extends State<AppLayout> {
     SettingsScreen(), // 3
   ];
 
-  int index = 0;
+  int index = 3;
 
   @override
   Widget build(BuildContext context) {
